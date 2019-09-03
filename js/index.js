@@ -46,17 +46,17 @@ let links = document.querySelectorAll('a');
 console.log(links);
 
 let linkOne = links[0];
-linkOne.textContent = "Services";
+linkOne.textContent = siteContent.nav["nav-item-1"];
 let linkTwo = links[1];
-linkTwo.textContent = "Product";
+linkTwo.textContent = siteContent.nav["nav-item-2"];
 let linkThree = links[2];
-linkThree.textContent = "Vision";
+linkThree.textContent = siteContent.nav["nav-item-3"];
 let linkFour = links[3];
-linkFour.textContent = "Features";
+linkFour.textContent = siteContent.nav["nav-item-4"];
 let linkFive = links[4];
-linkFive.textContent = "About";
+linkFive.textContent =siteContent.nav["nav-item-5"];
 let linkSix = links[5];
-linkSix.textContent = "Contact";
+linkSix.textContent = siteContent.nav["nav-item-6"];
 
 //turn links text to green
 links.forEach(element => {
@@ -75,10 +75,10 @@ navigation.prepend(newItemTwo);
 
 //cta section
 let headline = document.querySelector('.cta-text h1');
-headline.textContent = "DOM Is Awesome";
+headline.textContent = siteContent.cta["h1"];
 
 let button = document.querySelector('.cta button');
-button.textContent = "Get Started";
+button.textContent = siteContent.cta["button"];
 
 let mainImage = document.getElementById("cta-img");
 mainImage.setAttribute('src', siteContent["cta"]["img-src"])
@@ -87,18 +87,18 @@ mainImage.setAttribute('src', siteContent["cta"]["img-src"])
 let topContentHeadlines = document.querySelectorAll('.text-content, h4');
 
 let featuresHeadline = topContentHeadlines[1];
-featuresHeadline.textContent = "Features";
+featuresHeadline.textContent = siteContent["main-content"]["features-h4"];
 
 let topContentParagraphs = document.querySelectorAll('.text-content, p');
 
 let featuresParagraph = topContentParagraphs[1];
-featuresParagraph.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+featuresParagraph.textContent =siteContent["main-content"]["features-content"];
 
 let aboutHeadline = topContentHeadlines[3];
-aboutHeadline.textContent = "About";
+aboutHeadline.textContent = siteContent["main-content"]["about-h4"];
 
 let aboutParagraph = topContentParagraphs[3];
-aboutParagraph.textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+aboutParagraph.textContent = siteContent["main-content"]["about-content"];
 
 //middle image
 let middleImg = document.querySelector('#middle-img');
@@ -106,39 +106,39 @@ middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 //bottom-content
 let servicesHeadline = topContentHeadlines[5];
-servicesHeadline.textContent = "Services";
+servicesHeadline.textContent = siteContent["main-content"]["services-h4"];
 
 let servicesParagraph = topContentParagraphs[5];
-servicesParagraph.textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+servicesParagraph.textContent = siteContent["main-content"]["services-content"];
 
 let productHeadline = topContentHeadlines[7];
-productHeadline.textContent = "Product";
+productHeadline.textContent = siteContent["main-content"]["product-h4"];
 
 let productParagraph = topContentParagraphs[7];
-productParagraph.textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+productParagraph.textContent = siteContent["main-content"]["product-content"];
 
 let visionHeadline = topContentHeadlines[9];
-visionHeadline.textContent = "Vision";
+visionHeadline.textContent = siteContent["main-content"]["vision-h4"];
 
 let visionParagraph = topContentParagraphs[9];
-visionParagraph.textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+visionParagraph.textContent = siteContent["main-content"]["vision-content"];
 
 //contact section
 let contactHeadline = document.querySelector('.contact h4');
-contactHeadline.textContent = "Contact";
+contactHeadline.textContent = siteContent["contact"]["contact-h4"];
 
 let contactParagraphs = document.querySelectorAll('.contact p');
 
 let contactLineOne = contactParagraphs[0];
-contactLineOne.textContent = "123 Way 456 Street Somewhere, USA";
+contactLineOne.textContent = siteContent["contact"]["address"];
 let contactLineTwo = contactParagraphs[1];
-contactLineTwo.textContent = "1 (888) 888-8888";
+contactLineTwo.textContent = siteContent["contact"]["phone"];
 let contactLineThree = contactParagraphs[2];
-contactLineThree.textContent = "sales@greatidea.io";
+contactLineThree.textContent = siteContent["contact"]["email"];
 
 //footer
 let footer = document.querySelector('footer');
-footer.textContent = "Copyright Great Idea! 2018";
+footer.textContent = siteContent["footer"]["copyright"];
 
 //stretch goals - updating styles throughout document
 headline.style.color = "purple";
