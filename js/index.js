@@ -147,3 +147,22 @@ button.style.backgroundColor = "black";
 button.style.color = "white";
 button.style.borderRadius = "20%";
 
+//add button to update content
+const newList = document.createElement('ul');
+newList.textContent = "New List for Stretch Goal";
+const body = document.querySelector('body');
+body.append(newList);
+const newListItemOne = document.createElement('li');
+newListItemOne.textContent = "Item on list";
+newList.append(newListItemOne);
+const newButton = document.createElement('button');
+newButton.textContent = "Update List";
+body.append(newButton);
+
+newButton.addEventListener('click', () => {
+  const li = document.createElement('li');
+  li.textContent = "New list item";
+  newList.append(li);
+})
+
+
